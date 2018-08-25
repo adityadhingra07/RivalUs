@@ -3,10 +3,77 @@
   <head>
     <!-- The first thing in any HTML file should be the charset -->
     <meta charset="utf-8">
-    <!-- Make the page mobile compatible -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- MATERIALIZECSS -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <!-- MATERIALIZECSS END -->
+      
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- FireBase UI css -->
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="mobile-web-app-capable" content="yes">
-    <title>React.js Boilerplate</title>
+
+    <!-- Custom CSS -->
+    <style>
+      #app {
+        width: 100wh;
+        height: 90vh;
+        color: #fff;
+        background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+        background-size: 400% 400%;
+        -webkit-animation: Gradient 15s ease infinite;
+        -moz-animation: Gradient 15s ease infinite;
+        animation: Gradient 15s ease infinite;
+      }
+
+      @-webkit-keyframes Gradient {
+        0% {
+          background-position: 0% 50%
+        }
+        50% {
+          background-position: 100% 50%
+        }
+        100% {
+          background-position: 0% 50%
+        }
+      }
+
+      @-moz-keyframes Gradient {
+        0% {
+          background-position: 0% 50%
+        }
+        50% {
+          background-position: 100% 50%
+        }
+        100% {
+          background-position: 0% 50%
+        }
+      }
+
+      @keyframes Gradient {
+        0% {
+          background-position: 0% 50%
+        }
+        50% {
+          background-position: 100% 50%
+        }
+        100% {
+          background-position: 0% 50%
+        }
+      }
+    </style>
+
+    <title>rivalus</title>
   </head>
   <body>
     <!-- Display a message if JS has been disabled on the browser. -->

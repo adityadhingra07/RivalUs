@@ -14,16 +14,30 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
+import firebase from 'firebase'
+
+import NavBar from '../../components/NavBar';
+import Login from '../Login';
+
 import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
+
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyA7l-U8ZU8qOl4JsNrQ5SRkhnnDq45R22w",
+  authDomain: "rival-us.firebaseapp.com",
+  databaseURL: "https://rival-us.firebaseio.com",
+  projectId: "rival-us",
+  storageBucket: "rival-us.appspot.com",
+  messagingSenderId: "274178549474"
+};
+firebase.initializeApp(config);
 
 export default function App() {
   return (
     <div>
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route component={NotFoundPage} />
-      </Switch>
+      <NavBar/>
+      <Login/>
     </div>
   );
 }
