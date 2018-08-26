@@ -18,6 +18,7 @@ import firebase from 'firebase'
 
 import NavBar from '../../components/NavBar';
 import Login from '../Login';
+import Dashboard from '../../components/Dashboard'
 
 import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
@@ -37,7 +38,10 @@ export default function App() {
   return (
     <div>
       <NavBar/>
-      <Login/>
+      <div className="container">
+        <Login/>
+        <Dashboard/>
+      </div>
     </div>
   );
 }
